@@ -1,4 +1,4 @@
-@echo off
+  @echo off
 title Francis Easy PC Cleaner
 
 :message
@@ -123,8 +123,6 @@ defrag /C /H /U /V
 @echo DEFRAG COMPLETE =)
 @echo ++++++++++++++++++
 
-goto :kdrama
-
 :3
 :temp clean
 
@@ -157,8 +155,7 @@ c:\windows\SYSTEM32\cleanmgr.exe /sagerun:1
 @echo DISK CLEAN DONE =)
 @echo ++++++++++++++++++
 
-goto :kdrama
-goto :exit
+goto :message
 
 
 :kdrama
