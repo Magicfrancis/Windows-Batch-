@@ -19,6 +19,28 @@ if %op%==4 goto :kdrama
 if %op%==5 goto :exit
 if %op%==6 goto :hidden
 
+:error
+cls
+@echo SORRY INVALID INPUT=)
+wmic cpu get name
+echo My First Batch for Windows OS =)
+echo Press a number follow by an enter
+echo 1. Disk clean and Defrag with a shutdown
+echo 2. Disk clean and defrag without a shutdown
+echo 3. Temp clean and Disk clean only
+echo 4. Watch Kdrama 
+echo 5. Exit
+set /p op=Input:
+if %op%==1 goto :1
+if %op%==2 goto :2
+if %op%==3 goto :3
+if %op%==4 goto :kdrama
+if %op%==5 goto :exit
+if %op%==6 goto :hidden
+
+goto :error
+
+
 
 
 :1
