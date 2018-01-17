@@ -6,8 +6,8 @@ cls
 wmic cpu get name
 echo My First Batch for Windows OS =)
 echo Press a number follow by an enter
-echo 1. Disk clean and Defrag with a shutdown
-echo 2. Disk clean and defrag without a shutdown
+echo 1. Disk clean and Defrag (for harddrive) with a shutdown
+echo 2. Disk clean and Defrag (for harddrive) without a shutdown
 echo 3. Temp clean and Disk clean only
 echo 4. Watch Kdrama 
 echo 5. Exit
@@ -25,8 +25,8 @@ cls
 wmic cpu get name
 echo My First Batch for Windows OS =)
 echo Press a number follow by an enter
-echo 1. Disk clean and Defrag with a shutdown
-echo 2. Disk clean and defrag without a shutdown
+echo 1. Disk clean and Defrag (for harddrive) with a shutdown
+echo 2. Disk clean and Defrag (for harddrive) without a shutdown
 echo 3. Temp clean and Disk clean only
 echo 4. Watch Kdrama 
 echo 5. Exit
@@ -144,6 +144,8 @@ defrag /C /H /U /V
 @echo ++++++++++++++++++
 @echo DEFRAG COMPLETE =)
 @echo ++++++++++++++++++
+
+goto :message
 
 :3
 :temp clean
