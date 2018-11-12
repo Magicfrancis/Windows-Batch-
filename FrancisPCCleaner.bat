@@ -3,14 +3,18 @@ title Francis Easy PC Cleaner
 
 :message
 cls
+@echo Hello %USERNAME% =) & echo. 
+@echo CPU
 wmic cpu get name
-echo My First Batch for Windows OS =)
-echo Press a number follow by an enter
-echo 1. Clean Temp, Disk and Defrag (for harddrive) with a shutdown
-echo 2. Clean Temp, Disk and Defrag (for harddrive) without a shutdown
-echo 3. Clean Temp and Disk only
-echo 4. Watch Kdrama 
-echo 5. Exit
+@echo GPU
+wmic path win32_VideoController get name 
+@echo My First Batch for Windows OS =)
+@echo Press a number follow by an enter
+@echo 1. Clean Temp, Disk and Defrag (for harddrive) with a shutdown
+@echo 2. Clean Temp, Disk and Defrag (for harddrive) without a shutdown
+@echo 3. Clean Temp and Disk only
+@echo 4. Watch Kdrama 
+@echo 5. Exit
 set /p op=Input:
 if %op%==1 goto :1
 if %op%==2 goto :2
